@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{upgreek}
+\usepackage{textcomp}
+
+\begin{document}
+
+%% công thức 2
+$
+Y(n)=X(n)-0.97\text{\raisebox{0.9ex}{\mbox{\scriptsize$\star$}}}X(n-1)
+$
+
+%% công thức 3.1
+PSD=$|$DFT(Y(n))$|^2$ 
+
+%% công thức 3.2
+	Hm(k)=
+$	\left\{
+	\begin{array}{c}
+		0;k < f(m-1) \\
+		\dfrac{k-f(m-1)}{f(m)-f(m-1)};f(m-1)\le k\le f(m) \\ 
+		\dfrac{f(m+1)-k}{f(m+1)-f(m)};f(m)\le k<f(m+1) \\
+		0;k>f(m+1)
+	\end{array}
+	\right.
+$
+
+%% công thức 4.1
+$
+(y\raisebox{0.3ex}{\mbox{\tiny$'$}}n)=-[a_1y_{(n-1)}+a_2y_{(n-2)}+a_3y_{(n-3)}+\cdots+a_py_{(n-p)}]
+$
+
+%% công thức 4.2
+$
+e_n=y_n-y\raisebox{0.3ex}{\mbox{\tiny$'$}}n=y_n+a_1y_{(n-1)}+a_2y_{(n-2)}+a_3y_{(n-3)}+\cdots+a_py_{(n-p)}
+$
+
+%% công thức 4.3
+C=real (DFT($\log_2$(abs(S))))
+
+%% công thức 5.1
+R+(m)=
+$	\left\{
+	\begin{array}{c} %bảng 1 cột 1 hàng không viền
+		R(m);m>0 \\
+		\dfrac{R(0)}{2};m=0 \\
+		0;m<0
+	\end{array}
+	\right\}
+$
+
+%% công thức 5.2
+$
+R^+(m)+R^+(-m)=R(m);\hspace{1.5cm} -\infty\le m\le\infty
+$
+
+%% công thức 5.3
+Cepstrum of signal=$|$F$^{-1}$\{log($|$F\{f(t)\}$^2$)\}$|^2$
+
+%% công thức 5.4, kí tự lambda như l
+$
+p(X/\uplambda)=\mbox{\Large$\sum_{\mbox{\scriptsize$i=1$}}^{\mbox{\scriptsize$M$}}$}wig\Big(X|\mu_i\mbox{\Large$\sum$}i)\Big),
+$
+
+%% công thức 6
+$
+\text{Expo-Log=}
+\left\{
+	\begin{array}{c}
+		700\text{\texttimes}\bigg(10^{\raisebox{0.8ex}{\mbox{\normalsize$\frac{f}{3988}$}}}-1\bigg)0\le f\le2000\text{Hz} \\
+		2595\text{\texttimes}\text{log}\Big(1+\dfrac{f}{700}\Big)0\le f\le4000\text{Hz} 
+	\end{array}
+\right\}
+$
+\end{document}
+% \text{} : chữ đứng trong môi trường toán
+% \mbox{\cỡ chữ$công thức toán$} : thay đổi độ lớn của symbol
+% \left\"dấu ngoặc" : dấu ngoặc trái.
+% \right\"dấu ngoặc" : tự hiểu.
+% \raisebox{độ cao}{abc}: cho chữ abc cao thêm "độ cao"
+% \cdots : dấu 3 chấm nằm giữa hàng
+% \hspace{•} : cách ra một khoảng 
