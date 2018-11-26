@@ -1,0 +1,119 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%--------------- Thanh ngang 
+\usepackage{tikz}
+%--------------- Chỉnh lại Header
+\setlength{\headheight}{22pt}
+%----------------
+\usepackage{color}
+\usepackage{framed}
+\usepackage{fancyhdr} 
+%------------------- Chia cột
+\usepackage{multicol}
+%-------------------Phần Header
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fontsize{8pt}{15pt}\selectfont \emph{ISSN (Print) : 0974-6846}\\
+\vspace{-0,2cm}
+\emph{ISSN (Online) : 0974-5645}}
+\lhead{\fontsize{6pt}{21.3096pt}\selectfont \textbf{Indian Journal of Science and Technology}, Vol 9(11), DOI: 10.17485/ijst/2016/v9i11/88460, March 2016}
+%-------------------------
+%-------------------------Ngăn thụt đầu dòng
+\setlength{\parindent}{0pt}
+%-------------------------
+\begin{document}
+%-------------------------Định dạng màu
+\definecolor{tieude}{rgb}{0,0.411,0.667}
+%--------------------------
+{\huge \fontsize{20,74pt}{10pt}\selectfont \color{tieude}\begin{flushright}
+\fontsize{17,28pt}{23pt}\selectfont \textbf{Speech Emotion Recognition: Performance Analysis based on Fused Algorithms and GMM Modelling}
+\end{flushright}}
+\begin{flushright}
+\textbf{{R. Subhashree}$^1$ and {G. N. Rathna}$^2$}
+\end{flushright}
+%--------------------------
+\begin{flushright}
+{{$^1${Department of Electrical Engineering, Amrita University, Amritanagar Post, Ettimadai,}\\
+Coimbatore - 641112, Tamil Nadu, India.\\
+$^2$Department of Electrical Engineering, Indian Institute of Sciences, C V Raman Ave,\\
+Bengaluru - 560012, Karnataka, India;\\
+z-E-mail: subha94@ymail.com, rathna@ee.iisc.ernet.in}}
+\end{flushright}
+%--------------------------
+\vspace{-0,4cm}
+\begin{tikzpicture}[remember picture,overlay]
+\path[left color=white,right color=blue]
+([yshift=-215pt,xshift=8pt]current page.north west)
++(18.8,-0.05pt) rectangle +(1.5cm,0.1pt);
+\end{tikzpicture}
+%--------------------------Box 1
+\setlength{\FrameRule}{2pt}
+\setlength{\FrameSep}{5pt}
+\definecolor{shadecolor}{rgb}{0.929,0.949,0.976}
+\begin{shaded}
+{\color{tieude}{\textbf{Abstract}}}\\
+%-----------
+\fontsize{9pt}{13pt}\selectfont
+%-----------
+\textbf{Background/Objectives:} Speech emotion recognition (SER) is an important aspect of Human-Computer Interaction systems which is widely used in different sectors like healthcare, robotics, automatic call centres and distance education.
+Speech emotion recognition involves in depth analysis of the signal and identifying the appropriate emotion based on
+its trained database using extracted features. \textbf{Method/Statistical Analysis:} This paper aims in devising SER system
+using linear prediction of the causal part of the autocorrelation sequence (OSALPC) algorithm which has been proven
+to efficiently reduce noise along with Linear Frequency Cepstral Coefficients (LFCC), Linear Predictive Coding (LPC),
+MFCC, LPC using cepstrum for feature extraction. After extracting the feature vectors from the voice signal, it is modelled \textbf{Findings:}
+Performance was analysed and our proposed system showed an overall efficiency of 89\% when tested on German database
+(Emo-DB) for 7 emotions. The overall efficiency has proven to increase compared to the studies made up to date on the
+German Database. The highest emotion recognition rate was for SAD using fused algorithm which was 95.56\%. Also results
+were tabulated and compared using Modified MFCC. A Graphical unit interface of the proposed system is also devised.
+\textbf{Application/Improvements:} The applications of speech emotion recognition are farfetched. Further scope of this work
+will be a comparison of the achieved recognition rate using algorithms with recognition rate achieved by humans.
+\end{shaded}
+%-----------------------------------------
+\vspace{-0,7cm}
+{\color{tieude}\rule{17cm}{0,1pt}}\\
+{\color{tieude}\textbf{Keywords:}} Emotion Recognition, LPC, MFCC, GMM, MAP, OSALPC
+%--------------------------- Văn bản 1
+\begin{multicols}{2}
+%--------------------------Thanh ngang 1
+{\Large  \color{tieude} \rmfamily \textbf{1. Introduction}}
+
+\begin{tikzpicture}[remember picture,overlay]
+\path[left color=gray,right color=white]
+([yshift=-469pt,xshift=-0.5pt]current page.north west)
++(10.5,-0.1pt) rectangle +(2cm,0.5pt);
+\end{tikzpicture}
+{\vspace*{-1pt}
+%-------------------------
+\hspace*{-10pt} Recognizing emotions from speech had diverse appli
+cations in different felds ranging from health care and
+medicine to entertainment. Currently it is predomi
+nantly being used for facilitating interaction of humans
+with computers and robots. Such robots are used in
+medicine for purposes like monitoring autistic people
+and helping them interpret expressions and developing
+a system for therapy and counselling, or in a brain-com
+puter interface to interpret emotion from voice along
+with facial expressions and EEG signals to help patients
+deal with anxiety, stress and depression. It can also be
+used in the feld of entertainment to identify the emo
+tions and reactions of users. Various algorithms have
+been deployed over the years for the two important pro
+cesses involved in SER (Speech Emotion Recognition)
+namely feature extraction and the decision making.
+Some of the algorithms are Artifcial neural networks$^1$,
+combination of linear prediction cepstrum coefcients
+(LPCC), Mel Frequency cepstrum coefcients (MFCC),
+Linear Prediction coefcients and Mel cepstrum coef
+fcients (LPCMCC) and the Support Vector Machine
+(SVM); combination of HMM and SVM, ANN, KNN,
+MLBetc$^2$; MFCC, Discrete wavelet transforms with
+SVM, Feature extraction algorithm based on Field}
+\end{multicols}
+{\color{tieude}\ \rule{3cm}{0.1pt}}\\
+$^*$Author for correspondence
+\end{document}
